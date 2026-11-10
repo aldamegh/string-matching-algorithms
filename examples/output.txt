@@ -1,0 +1,9 @@
+Text:    ABABABA
+Pattern: ABA
+
+Overlapping matches (zero-based UTF-16 positions)
+  Brute force: [0, 2, 4] (3 matches)
+  KMP: [0, 2, 4] (3 matches)
+  Boyer-Moore (bad character): [0, 2, 4] (3 matches)
+
+All three find positions 0, 2, and 4.

@@ -2,6 +2,28 @@
 
 A Java Swing coursework tool comparing brute-force, Knuth-Morris-Pratt (KMP), and Boyer-Moore bad-character string matching. It reports overlapping match positions and elapsed time.
 
+## Example walkthrough
+
+With text `ABABABA` and pattern `ABA`, all three algorithms report positions **0, 2, and 4**, including overlapping matches. Positions use zero-based Java UTF-16 indices.
+
+![Synthetic example output](docs/demo-output.svg)
+
+Run from the repository root. For Java, create `build` if it does not already exist:
+
+```sh
+mkdir build
+javac --release 8 -encoding UTF-8 -d build src/*.java examples/*.java
+java -cp build MatchDemo
+```
+
+[Runnable example](examples/) · [Plain-text output](examples/output.txt)
+
+The example and output visual were added for this portfolio in November 2026 using newly authored synthetic inputs. They are separate from the original coursework.
+
+### Try the Swing interface
+
+Launch `java -cp build StringMatching`, select **KMP**, enter `ABABABA` in **String Text** and `ABA` in **Pattern Text**, then choose **Find Substring**. Expect three matches at positions 0, 2, and 4. The displayed duration varies by machine and is not a controlled benchmark.
+
 ## Course and original date
 
 - **Course / المادة:** CSC 311 - Algorithms Design and Analysis / تصميم وتحليل الخوارزميات, King Saud University.
